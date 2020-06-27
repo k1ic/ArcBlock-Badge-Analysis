@@ -37,7 +37,7 @@ have_sheep_num = 0
 have_rabbit_num = 0
 for k, v in enumerate(res['data']['listAssets']['assets']):
     #过滤门票、证书
-    if str(v['moniker']).endswith('证书') or str(v['moniker']).endswith(' 票'):
+    if str(v['moniker']).endswith('证书') or str(v['moniker']).endswith(' 票') or str(v['moniker']).endswith('PREMIUM TICKET') or str(v['moniker']).endswith('FREE TICKET') or str(v['moniker']).endswith('Complete Certificate'):
         continue
 
     #徽章did
