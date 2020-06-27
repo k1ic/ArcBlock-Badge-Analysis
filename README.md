@@ -4,6 +4,10 @@
 
 [https://hashnews.k1ic.com/badge_stat/?devcon_did=z1oSWa9YFJNUXTk93RyCSc4JGJBiVfNXfdD](https://hashnews.k1ic.com/badge_stat/?devcon_did=z1oSWa9YFJNUXTk93RyCSc4JGJBiVfNXfdD)
 
+# 项目背景
+徽章玩家有统计徽章中特定元素数量（如：狗、羊、大雁等）的诉求
+
+
 # 实现原理
 1. 通过资产链api获取devcon账户下的所有资产
 2. 过滤出所有徽章（此时徽章内容为压缩数据）
