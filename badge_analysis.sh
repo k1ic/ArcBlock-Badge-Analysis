@@ -8,7 +8,7 @@ then
 fi
 
 #获取徽章标题
-text_line_num=`grep -n '</text>' $svg_file | awk -F ':' '{ print $1}' | sort | tail -1`
+text_line_num=`grep -n '</text>' $svg_file | tail -1 | awk -F ':' '{ print $1}' | sort | tail -1`
 text_line_num=`expr $text_line_num - 1`
 get_text_cmd="sed -n '"$text_line_num",1p' "$svg_file
 text=`echo $get_text_cmd | sh | sed 's/^[ \t]*//g'`
